@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Lee Ward's Home Page with information about me and my home">
+    <meta name="author" content="S. Lee Ward">
+    <title>WDD 131 - Dynamic Web Fundamentals - S. Lee Ward</title> 
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <h1><span id="course-title">WDD 131 - Dynamic Web Fundamentals</span></h1>
+        <nav>
+            <ol>
+                <li><a href="https://www.Linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/46?lang=eng&id=p1#p1">Scripture</a></li>
+                <li><a href="final-project/">Final Project</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h2>S. Lee Ward</h2>
+        <section class="card">
+            <heading>About Me</heading>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! My name is Lee Ward and I am from Western Texas in the U.S. I have traveled and lived around the world. I am currently studying Web Design with BYU Pathway Worldwide. I am also learning Python and C# Programming. I served in the Russia Yekaterinburg Mission from 2001-2003. I speak English, Russian, Spanish, French, Portuguese, Japanese, and Tagalog. I've lived in the US, Russia, the United Arab Emirates, and the Philippines. In the US, I have lived in Oregon, Utah, Tennessee, Maryland, Mississippi, Michigan, and Texas. I started my career as a nuclear engineer. Now, I work in management for regulatory compliance. I have a B.S. in Mathematics, an M.S. in Nuclear Engineering, and am working on a B.S. in Cyber Security and a B.S. in Software Development. I love programming and cyber security and look forward to transitioning to a career in tech in the future. I hope to specialize in quantum computing, if possible.</p>
+                    <heading class="location">Texas, USA</heading>
+                    <figure>
+                        <img src="images/texasflag.jpg" alt="Flag of Texas">
+                        <figcaption>Official flag of Texas</figcaption>
+                    </figure>
+                    <p>Texas is the 2nd largest state in the U.S. It is a major producer of oil and beef. The state capital is Austin, which is a major tech hub.</p>
+                </div>
+                <img src="images/profile.jpg" alt="Profile photo of S. Lee Ward">
+            </div>   
+        </section>
+        <section class="card">
+            <heading>Web Dev Resources</heading>
+            <ul>
+                <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://web.dev">Web.Dev</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.freecodecamp.org">Free Code Camp</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌊 S. Lee Ward 🌊 Texas, USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
