@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-/* ── Header ── */
+/* -----------Header--------------- */
 header {
     background-color: #1e3a8a;
     color: white;
@@ -32,7 +32,7 @@ header span {
     display: block;
 }
 
-/* ── Nav ── */
+/* ------------Nav----------------- */
 nav {
     background-color: #162d72;
     padding: 0.6rem 2rem;
@@ -58,7 +58,7 @@ nav a:hover {
     color: #f5c842;
 }
 
-/* ── Main ── */
+/* ----------------Main---------------- */
 main {
     flex: 1;
     max-width: 1100px;
@@ -80,7 +80,7 @@ main > h2 {
     margin-bottom: 1.5rem;
 }
 
-/* ── Cards ── */
+/* ----------------Cards-------------- */
 .card {
     background-color: white;
     border-radius: 8px;
@@ -181,7 +181,7 @@ figcaption {
     text-decoration: underline;
 }
 
-/* ── Footer ── */
+/* ---------------Footer-------------- */
 footer {
     background-color: #1e3a8a;
     color: white;
