@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Temple Album</title> 
+        <meta name="description" content="A dynamic page with filters showing some of my favorite temples.">
+        <meta name="author" content="S Lee Ward">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>Temple Album</h1>
+                <button type="button" id="menu" aria-label="Menu">&#9776;</button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Old">Old</a></li>
+                    <li><a href="#" title="New">New</a></li>
+                    <li><a href="#" title="Large">Large</a></li>
+                    <li><a href="#" title="Small">Small</a></li>
+                </ul>      
+            </nav>
+        </header>
+        <main>
+            <h2>Home</h2>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> 🌊 S. Lee Ward 🌊 Texas, USA</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
