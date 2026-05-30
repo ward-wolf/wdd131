@@ -11,12 +11,12 @@ const temperature = 40;
 const windSpeed = 16;
 
 function calculateWindChill(temp, wind) {
-    if (temp <= 10 && wind > 4.8) {
-        return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1) + "°C";
-    } else {
-        return "N/A";
-    }
+    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1) + "°C";
 }
 
-document.querySelector("#windChill").textContent = calculateWindChill(temperature, windSpeed);
+if (temperature <= 10 && windSpeed > 4.8) {
+    document.querySelector("#windChill").textContent = calculateWindChill(temperature, windSpeed);
+} else {
+    document.querySelector("#windChill").textContent = "N/A";
+}
 
