@@ -33,6 +33,8 @@ header h1 {
 main picture img {
     width: 100%;
     display: block;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 /* ---- Sections ---- */
