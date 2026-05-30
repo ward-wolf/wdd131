@@ -6,9 +6,9 @@ document.querySelector("#lastModified").textContent = document.lastModified;
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
+hamButton.addEventListener('click', function() {
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
 });
 
 // Temple Array
@@ -111,6 +111,8 @@ function displayTemples(filteredTemples) {
         img.src = temple.imageUrl;
         img.alt = `${temple.templeName} Temple`;
         img.loading = 'lazy';
+        img.width = 400;
+        img.height = 250;
 
         const figcaption = document.createElement('figcaption');
         figcaption.innerHTML = `

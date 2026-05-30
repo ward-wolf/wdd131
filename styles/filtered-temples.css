@@ -105,6 +105,7 @@ figure {
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     background-color: #1e3a8a;
+    padding-bottom: 0.75rem;
 }
 
 figcaption {
@@ -133,7 +134,6 @@ figure img {
     height: 200px;
     object-fit: contain;
     display: block;
-    padding-bottom: 0.75rem;
 }
 
 /* ---------------Footer-------------- */
