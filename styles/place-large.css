@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) {
+
+    main {
+        position: relative;
+    }
+
+    main picture img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    section {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 6px;
+        border-bottom: none;
+    }
+
+    section p {
+        font-size: 0.875rem;
+    }
+
+    section p strong {
+        min-width: 6rem;
+    }
+
+    #data {
+        width: 300px;
+        top: 1rem;
+        left: 1rem;
+        border-top: none;
+    }
+
+    #weather {
+        width: 220px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    #weather img {
+        display: none;
+    }
+
+    #weather h2::after {
+        content: " ☀";
+    }
+
+}

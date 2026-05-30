@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>U.A.E.</title> 
+        <meta name="description" content="A dynamic page that provides information about the United Arab Emirates.">
+        <meta name="author" content="S Lee Ward">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>United Arab Emirates</h1>
+        </header>
+        <main>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <img src="images/hero-large.webp" alt="Dubai, UAE" width="500" height="250">
+            </picture>
+            <section id="data">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 83,600 km² (32,278 mi²)</p>
+                <p><strong>Population:</strong> 9,770,529</p>
+                <p><strong>Capital:</strong> Abu Dhabi</p>
+                <p><strong>Languages:</strong> Arabic (official), English</p>
+                <p><strong>Currency:</strong> UAE Dirham (AED)</p>
+                <p><strong>Time Zone:</strong> UTC+4</p>
+                <p><strong>Country Code:</strong> +971</p>
+            </section>
+            <section id="weather">
+                <h2>Weather</h2>
+                <img src="images/sun.svg" alt="Sunny">
+                <p><strong>Temperature:</strong> 40°C</p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Wind:</strong> 16 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+            </section>
+        </main> 
+        <footer>
+            <p>©<span id="currentyear"></span> 🌊 S. Lee Ward 🌊 Texas, USA</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>

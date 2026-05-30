@@ -1,0 +1,84 @@
+:root {
+    --color-primary: #C8102E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+/* ---- Header ---- */
+header {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* ---- Hero Image ---- */
+main picture img {
+    width: 100%;
+    display: block;
+}
+
+/* ---- Sections ---- */
+section {
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+#data {
+    border-top: 10px solid var(--color-primary);
+}
+
+section h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.4rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section p {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.4rem;
+}
+
+section p strong {
+    min-width: 7rem;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* ---- Weather Icon ---- */
+section img {
+    display: block;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 0.75rem;
+}
+
+/* ---- Footer ---- */
+footer {
+    background-color: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
