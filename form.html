@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Review</title>
+        <meta name="description" content="Submit a product review for Wolf Enterprises products.">
+        <meta name="author" content="S Lee Ward">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/form-large.css">
+        <script src="scripts/form.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form method="get" action="review.html">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a product</option>
+                </select>
+                <fieldset>
+                    <legend>Overall Rating</legend>
+                    <div class="star-rating">
+                        <input type="radio" name="stars" id="star-a" value="5" required aria-label="5 stars"/>
+                        <label for="star-a"></label>
+
+                        <input type="radio" name="stars" id="star-b" value="4" aria-label="4 stars"/>
+                        <label for="star-b"></label>
+
+                        <input type="radio" name="stars" id="star-c" value="3" aria-label="3 stars"/>
+                        <label for="star-c"></label>
+
+                        <input type="radio" name="stars" id="star-d" value="2" aria-label="2 stars"/>
+                        <label for="star-d"></label>
+
+                        <input type="radio" name="stars" id="star-e" value="1" aria-label="1 star"/>
+                        <label for="star-e"></label>
+                    </div>
+                </fieldset>
+                <label for="install-date">Date of Installation</label>
+                <input type="date" id="install-date" name="install-date" required>
+                <fieldset>
+                    <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-durability" name="features" value="durability">
+                        <label for="feature-durability">Durability</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-ease" name="features" value="ease-of-use">
+                        <label for="feature-ease">Ease of Use</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-performance" name="features" value="performance">
+                        <label for="feature-performance">Performance</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="feature-design" name="features" value="design">
+                        <label for="feature-design">Design</label>
+                    </div>
+                </fieldset>
+                <label for="written-review">Written Review (Optional)</label>
+                <textarea id="written-review" name="written-review" placeholder="Share your experience with this product..."></textarea>
+                <label for="user-name">Your Name (Optional)</label>
+                <input type="text" id="user-name" name="user-name" autocomplete="name">
+                <input type="submit" value="Post Review">
+            </form>
+        </main>
+        <footer>
+            <p>©<span id="currentyear"></span> 🌊 S. Lee Ward 🌊 Texas, USA</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
