@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wolf Enterprises | Tech Training for Women Worldwide</title>
+        <meta name="description" content="Wolf Enterprises offers affordable, fast-track tech training in programming, AI, and quantum computing to empower women around the world.">
+        <meta name="author" content="S Lee Ward">
+        <link rel="icon" type="image/png" href="images/we-logo.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/medium.css" media="(min-width: 600px)">
+        <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+<body>
+    <header>
+        <img src="images/we-logo.png" alt="Wolf Enterprises Logo" width="140" height="101" loading="lazy">
+        <h1>Wolf Enterprises</h1>
+        <div class="header-top">
+            <button type="button" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero home-hero">
+            <picture>
+                <source srcset="images/small-quantum.webp" media="(max-width: 599px)">
+                <img src="images/large-quantum.webp" alt="Quantum Computer Network" width="550" height="424" loading="lazy">
+            </picture>
+            <article>
+                <h2>Our Purpose</h2>
+                <p>To empower women around the world to lead the next tech revolution in quantum computing, artificial intelligence, and machine learning.
+                </p>
+            </article>
+        </div>
+        <div class="cta-form">
+            <div class="cta">
+                <img src="images/quantum-1.webp" alt="Quantum Brain" width="297" height="170" loading="lazy">
+                <h2>Ready to transform your life?</h2>
+                <p>Start now! Have a brand new life and career in 6 months!
+                </p>
+                <a href="classes.html" class="cta-button">View Our Classes</a>
+            </div>
+            <div class="form">
+                <p class="webinar-heading">Want to hear more about how we change the lives of women around the world? Sign up to learn about our informational webinars today! You'll even receive an exclusive discount and bonus for attending!</p>
+                <form action="signedup.html" method="get">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="email" required>
+                    <button type="submit">Sign up for the next webinar!</button>
+                </form>
+            </div>
+        </div>
+        <section class="learn">
+            <h2>Learn More About Our Mission</h2>
+            <div class="learn-grid">
+                <figure>
+                    <a href="about.html">
+                        <img src="images/amanda.webp" alt="Learn more about us" width="400" height="399" loading="lazy">
+                    </a>
+                    <figcaption>
+                        <a href="about.html">Learn more about us</a>
+                        <p>Discover our story and what makes Wolf Enterprises the premier training program for women to master in-demand tech skills. Click to learn more about who we are and what drives us.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <a href="contact.html">
+                        <img src="images/rana.webp" alt="Contact our team" width="400" height="375" loading="lazy">
+                    </a>
+                    <figcaption>
+                        <a href="contact.html">Contact our team</a>
+                        <p>Have a question or ready to transform your life? Our friendly team is here to help. Click to
+                            reach out and we'll get back to you right away.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> <span aria-hidden="true">🌊</span> S. Lee Ward <span aria-hidden="true">🌊</span> Texas, USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

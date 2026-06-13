@@ -1,0 +1,718 @@
+:root {
+    --black: #1A1A1A;
+    --gold: #C9A84C;
+    --white: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --radius: 4px;
+    --border-thin: 1px solid var(--gold);
+    --border-thick: 3px solid var(--gold);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    color: var(--black);
+}
+
+img {
+    border: var(--border-thick);
+}
+
+/* Layout containers */
+
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    padding-bottom: 1.5rem;
+}
+
+/* Header */
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.75rem 1.5rem;
+}
+
+header img {
+    width: 110px;
+    height: auto;
+    display: block;
+}
+
+header h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gold);
+    white-space: nowrap;
+}
+
+header .header-top {
+    display: block;
+}
+
+header .header-top button {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+header nav {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header nav.open {
+    display: block;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+header nav a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+}
+
+header nav a:hover {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+header nav li {
+    flex: 0 1 auto;
+}
+
+/* Hero */
+
+.hero {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.hero picture {
+    display: block;
+    aspect-ratio: 700 / 933;
+}
+
+.hero > img,
+.hero picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--gold);
+}
+
+.hero article h2 {
+    background-color: transparent;
+}
+
+.hero article p {
+    flex: 1;
+    text-align: left;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.hero article p strong {
+    font-family: 'Cinzel', Georgia, serif;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    float: right;
+}
+
+/* Home page hero: smaller, with overlaid purpose statement */
+
+.home-hero article {
+    background-color: rgba(26, 26, 26, 0.75);
+    color: var(--white);
+}
+
+.home-hero article h2 {
+    color: var(--gold);
+}
+
+/* About page hero: purpose and picture flow below the image instead of overlaying it */
+
+.about-hero article {
+    position: static;
+}
+
+/* Section headings */
+
+h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.25rem;
+    color: var(--black);
+    background-color: var(--gold);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* Our Story section */
+
+.story {
+    margin: 1rem 0;
+    border: var(--border-thin);
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+}
+
+.story-grid p {
+    line-height: 1.5;
+}
+
+.story-grid img {
+    width: 200px;
+    height: auto;
+}
+
+/* Call to Action block */
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.cta img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--radius);
+}
+
+.cta h2 {
+    color: var(--black);
+    background-color: transparent;
+    padding: 0;
+}
+
+.cta p {
+    line-height: 1.5;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--gold);
+    color: var(--black);
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: var(--radius);
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Two-column layouts (picture/form, cta/table, etc.) */
+
+.cta-form,
+.cta-table,
+.picture-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Picture block */
+
+.picture {
+    height: 100%;
+}
+
+.picture figure {
+    position: relative;
+    height: 100%;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--radius);
+}
+
+.picture figcaption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.75rem;
+}
+
+/* Forms */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.webinar-heading {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.form form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    max-width: 500px;
+}
+
+.form label {
+    text-align: left;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="date"],
+.form select {
+    padding: 0.4rem 0.6rem;
+    border: var(--border-thin);
+    border-radius: var(--radius);
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form fieldset {
+    display: contents;
+}
+
+.form fieldset legend {
+    grid-column: 1 / -1;
+    text-align: left;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.form textarea {
+    grid-column: 1 / -1;
+    resize: vertical;
+    min-height: 8rem;
+    padding: 0.4rem 0.6rem;
+    border: var(--border-thin);
+    border-radius: var(--radius);
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.form .checkbox-option {
+    grid-column: 1 / -1;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form button[type="submit"],
+.form input[type="submit"] {
+    grid-column: 1 / -1;
+    background-color: var(--gold);
+    color: var(--black);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+.form button[type="submit"]:hover,
+.form input[type="submit"]:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* Star rating widget */
+
+.star-rating {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 0.25rem;
+}
+
+.star-rating input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.star-rating label {
+    cursor: pointer;
+    font-size: 1.75rem;
+    line-height: 1;
+    color: var(--black);
+}
+
+.star-rating label::before {
+    content: "\2606";
+}
+
+.star-rating input:checked ~ label::before {
+    content: "\2605";
+}
+
+.star-rating:focus-within {
+    outline: 2px solid var(--black);
+    outline-offset: 2px;
+}
+
+/* Learn section */
+
+.learn {
+    margin: 1rem 0;
+    border: var(--border-thin);
+    background-color: var(--light-gray);
+}
+
+.learn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.learn-grid figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: var(--border-thick);
+    padding: 0.5rem;
+}
+
+.learn-grid a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.learn-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    display: block;
+    border: none;
+}
+
+.learn-grid figcaption {
+    color: var(--black);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+
+.learn-grid figcaption a {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.learn-grid figcaption p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    color: var(--black);
+}
+
+/* Success Stories / What Will You Learn sections */
+
+.success,
+.learning {
+    margin: 1rem 0;
+    border: var(--border-thin);
+    background-color: var(--light-gray);
+}
+
+.success-grid,
+.learning-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.success-grid a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+.success-grid figure,
+.learning-grid figure {
+    flex-direction: column;
+    text-align: center;
+    border: var(--border-thick);
+    padding: 0.5rem;
+}
+
+.success-grid img,
+.learning-grid img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    display: block;
+    border: none;
+}
+
+.success-grid figcaption,
+.learning-grid figcaption {
+    color: var(--black);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    text-align: center;
+}
+
+.success-grid figcaption p,
+.learning-grid figcaption p {
+    color: var(--black);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+}
+
+.success-grid figcaption strong,
+.learning-grid figcaption strong {
+    display: block;
+    font-size: 1rem;
+}
+
+/* Success stories / learning grid carousel (mobile) */
+
+.success-carousel,
+.learning-carousel {
+    position: relative;
+}
+
+.success-grid,
+.learning-grid {
+    display: block;
+}
+
+.success-grid figure,
+.learning-grid figure {
+    display: none;
+}
+
+.success-grid figure.active,
+.learning-grid figure.active {
+    display: flex;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--gold);
+    color: var(--black);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-arrow:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.carousel-prev {
+    left: 0.25rem;
+}
+
+.carousel-next {
+    right: 0.25rem;
+}
+
+/* FAQs */
+
+.faqs {
+    margin: 1rem 0;
+}
+
+.faq-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.faq-item {
+    border: var(--border-thin);
+    border-radius: var(--radius);
+    padding: 0.75rem 1rem;
+    background-color: var(--light-gray);
+}
+
+.faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "\25BC";
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.faq-item[open] summary::after {
+    content: "\25B2";
+}
+
+.faq-item p {
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+/* Schedule Table */
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.table thead {
+    background-color: var(--gold);
+    color: var(--black);
+}
+
+.table th {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+}
+
+.table td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--gold);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--light-gray);
+}
+
+.table tbody tr:hover {
+    background-color: var(--gold);
+}
+
+/* Enrollment confirmation card */
+
+.enrollment-card {
+    margin: 1rem 0;
+    border: var(--border-thin);
+    background-color: var(--light-gray);
+}
+
+.enrollment-card p {
+    padding: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 1rem;
+    color: var(--gold);
+}
+
+footer p {
+    grid-column: 2;
+    text-align: center;
+}

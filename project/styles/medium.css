@@ -1,0 +1,46 @@
+/* Medium screens (tablets) */
+
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+    .success-grid,
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .hero picture {
+        aspect-ratio: 400 / 308;
+    }
+
+    header .header-top {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        width: auto;
+    }
+
+    header nav ul {
+        flex-direction: row;
+    }
+
+    .success-grid,
+    .learning-grid {
+        display: grid;
+    }
+
+    .cta-form,
+    .picture-form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .success-grid figure,
+    .learning-grid figure {
+        display: flex;
+    }
+
+    .carousel-arrow {
+        display: none;
+    }
+}

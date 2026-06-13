@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enroll Now | Wolf Enterprises</title>
+        <meta name="description" content="Ready to transform your life? Enroll today in Wolf Enterprises' technical training program for women.">
+        <meta name="author" content="S Lee Ward">
+        <link rel="icon" type="image/png" href="images/we-logo.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/medium.css" media="(min-width: 600px)">
+        <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+
+<body>
+    <header>
+        <img src="images/we-logo.png" alt="Wolf Enterprises Logo" width="140" height="101" loading="lazy">
+        <h1>Wolf Enterprises</h1>
+        <div class="header-top">
+            <button type="button" id="menu" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+        </div>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="picture-form">
+            <div class="picture">
+                <figure>
+                    <img src="images/quantum-4.webp" alt="Quantum Circuit" width="612" height="344" loading="lazy">
+                    <figcaption>Take a Quantum Leap in Your Career!</figcaption>
+                </figure>
+            </div>
+            <div class="form">
+                <form method="get" action="enrolled.html">
+                <label for="full-name">Your Name</label>
+                <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <label for="home-country">Home Country</label>
+                <select id="home-country" name="home-country" required>
+                    <option value="" disabled selected>Select your country</option>
+                </select>
+                <label for="other-country" id="other-country-label" hidden>Please specify your country</label>
+                <input type="text" id="other-country" name="other-country" hidden>
+                <fieldset>
+                    <legend>How Big of a Change Do You Need to Make in Your Life?</legend>
+                    <div class="star-rating">
+                        <input type="radio" name="life-change" id="change-a" value="5" required aria-label="5 stars - Huge change"/>
+                        <label for="change-a"></label>
+
+                        <input type="radio" name="life-change" id="change-b" value="4" required aria-label="4 stars"/>
+                        <label for="change-b"></label>
+
+                        <input type="radio" name="life-change" id="change-c" value="3" required aria-label="3 stars"/>
+                        <label for="change-c"></label>
+
+                        <input type="radio" name="life-change" id="change-d" value="2" required aria-label="2 stars"/>
+                        <label for="change-d"></label>
+
+                        <input type="radio" name="life-change" id="change-e" value="1" required aria-label="1 star - Minor change"/>
+                        <label for="change-e"></label>
+                    </div>
+                </fieldset>
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" required>
+                <fieldset>
+                    <legend>Which topics are you most interested in? (Check all that apply)</legend>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="topic-programming" name="topics" value="computer-programming">
+                        <label for="topic-programming">Computer Programming</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="topic-ai" name="topics" value="artificial-intelligence">
+                        <label for="topic-ai">Artificial Intelligence</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="topic-ml" name="topics" value="machine-learning">
+                        <label for="topic-ml">Machine Learning</label>
+                    </div>
+                    <div class="checkbox-option">
+                        <input type="checkbox" id="topic-quantum" name="topics" value="quantum-computing">
+                        <label for="topic-quantum">Quantum Computing</label>
+                    </div>
+                    
+                </fieldset>
+                <label for="goals">Tell Us About Your Goals to Transform Your Life (Optional)</label>
+                <textarea id="goals" name="goals" placeholder="Share what you hope to achieve through this program..."></textarea>
+                <input type="submit" value="Enroll now!">
+            </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> <span aria-hidden="true">🌊</span> S. Lee Ward <span aria-hidden="true">🌊</span> Texas, USA</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
